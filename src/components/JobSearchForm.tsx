@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import styles from '../styles/search.module.css';
 
 export default function JobSearchForm() {
   const [keywords, setKeywords] = useState('');
@@ -13,8 +14,8 @@ export default function JobSearchForm() {
   };
 
   return (
-    <div className="bg-white rounded-lg p-6 mb-8 shadow-lg">
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <div className={styles.search_section}>
+      <form onSubmit={handleSubmit}>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Keywords / Job Title / Job Ref
@@ -61,10 +62,10 @@ export default function JobSearchForm() {
         </div>
 
         {/* Submit Button */}
-        <div className="text-center">
+        <div className={styles.find_job_btn}>
           <button
             type="submit"
-            className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-8 rounded-md transition-colors"
+            className="text-white font-bold py-2 px-8"
           >
             Find jobs now 
           </button>

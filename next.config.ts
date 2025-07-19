@@ -4,7 +4,9 @@ const nextConfig = {
   experimental: {
     ssr: true,
   },
-  
+  sassOptions: {
+    additionalData: `$var: red;`,
+  },
   // Configure image optimization for SSR
   images: {
     domains: ['api.cv-library.co.uk'],

@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+.company_logo {
+    width: 200px;
+    height: 75px;
+    margin: 0 auto;
+  }
+}
+
+.company_logo {
+    margin: 0 auto;
+    text-align: center;
+}

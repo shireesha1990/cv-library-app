@@ -1,5 +1,5 @@
-import JobSearchForm from '../app/components/JobSearchForm';
-import JobCategories from '../app/components/JobCategories';
+import JobSearchForm from '@/components/JobSearchForm';
+import JobCategories from '@/components/JobCategories';
 import Logo from '@/components/CompanyLogo';
 
 export default function Home() {
