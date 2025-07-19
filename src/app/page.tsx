@@ -1,6 +1,6 @@
 import JobSearchForm from '@/components/JobSearchForm';
-import JobCategories from '@/components/JobCategories';
 import Logo from '@/components/CompanyLogo';
+import Accordion from '@/components/FooterAccordian';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           <JobSearchForm />
         </main>
         <footer>
-          <JobCategories />
+          <Accordion/>
         </footer>
       </div>
     </main>

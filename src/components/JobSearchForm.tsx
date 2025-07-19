@@ -17,7 +17,7 @@ export default function JobSearchForm() {
     <div className={styles.search_section}>
       <form onSubmit={handleSubmit}>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block font-medium mb-1">
             Keywords / Job Title / Job Ref
           </label>
           <input
@@ -25,14 +25,12 @@ export default function JobSearchForm() {
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
             placeholder="e.g. Sales Executive"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        {/* Location and Distance Row */}
-        <div className="flex gap-4">
-          <div className="flex-1">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+        <div className="flex gap-2">
+          <div className="w-full">
+            <label className="block text-sm font-medium mb-1">
               Location
             </label>
             <input
@@ -40,17 +38,17 @@ export default function JobSearchForm() {
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="e.g. Town or postcode"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300"
             />
           </div>
-          <div className="w-32">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+          <div className="w-full">
+            <label className="block text-sm font-medium mb-1">
               Distance
             </label>
             <select
               value={distance}
               onChange={(e) => setDistance(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="5 miles">5 miles</option>
               <option value="10 miles">10 miles</option>
