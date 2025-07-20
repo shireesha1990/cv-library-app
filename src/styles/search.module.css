@@ -27,15 +27,36 @@
     font-size: 16px;
     color: grey;
    }
+
+  @media (max-width: 800px) {
+    width: 350px;
+   }
  }
 
 .find_job_btn {
    background-color: #5BB543;
    text-align: right;
    display: block;
-   margin: 10px;
    margin-left: 300px;
-   border-radius: 2px;
    cursor: pointer;
    color: #ffffff;
+
+   @media (max-width: 800px) {
+    margin-left: 120px;
+    font-size: medium;
+   }
+
+   button {
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+   }
+
+   svg {
+    display: inline-block;
+    margin-left: 5px;
+    .a {
+        fill: #ffffff;
+    }
+   }
 }

@@ -1,4 +1,4 @@
-/* components/Accordion.module.css */
+/* components/Accordion.module.css
 .accordion {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -17,4 +17,13 @@
 .content {
   padding: 16px;
   background-color: #fff;
+} */
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

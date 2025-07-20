@@ -1,5 +1,5 @@
 // components/Accordion.tsx
-'use client';
+'use client'
 import { useState } from 'react';
 
 const Accordion: React.FC = () => {
@@ -27,7 +27,7 @@ const Accordion: React.FC = () => {
   ];
 
   return (
-    <div className="bg-blue-900 text-white p-4">
+    <div className="text-white p-4">
       <div className="flex border-b border-gray-500">
         <button
           className={`p-2 ${activeTab === 'location' ? 'bg-blue-700' : ''}`}

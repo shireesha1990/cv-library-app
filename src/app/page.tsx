@@ -2,9 +2,20 @@ import JobSearchForm from '@/components/JobSearchForm';
 import Logo from '@/components/CompanyLogo';
 import Accordion from '@/components/FooterAccordian';
 
+const items = [
+  {
+    header: 'Jobs by Location',
+    content: 'Accounting, Administration, Agriculture, Arts, Automotive, Catering',
+  },
+  {
+    header: 'Jobs by Industry',
+    content: 'Distribution, Driving, Education, Electronics, Engineering, Financial Services',
+  },
+];
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-blue-900">
+    <main className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <header>
